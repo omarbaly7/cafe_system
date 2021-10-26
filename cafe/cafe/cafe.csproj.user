@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="add_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="add_supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cashier_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="manger_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="supplier_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="waiter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="waiter_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
