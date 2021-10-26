@@ -48,12 +48,29 @@ namespace cafe
             this.home_button = new System.Windows.Forms.Button();
             this.separating_panel = new System.Windows.Forms.Panel();
             this.center_panel = new System.Windows.Forms.Panel();
+            this.stock_pannel = new System.Windows.Forms.Panel();
+            this.stock_but = new System.Windows.Forms.Button();
+            this.kitchen_stock_button = new System.Windows.Forms.Button();
+            this.pinding_to_kitchen_button = new System.Windows.Forms.Button();
+            this.pinding_to_stock_button = new System.Windows.Forms.Button();
+            this.order_site1 = new cafe.order_site();
+            this.settings_site1 = new cafe.settings_site();
+            this.reports_site1 = new cafe.reports_site();
+            this.tables_site1 = new cafe.tables_site();
+            this.stock_site1 = new cafe.stock_site();
+            this.materials_site1 = new cafe.materials_site();
+            this.customer_site1 = new cafe.customer_site();
+            this.home_site1 = new cafe.home_site();
             this.supplier_site1 = new cafe.supplier_site();
+            this.pinding_to_kitchen_site1 = new cafe.pinding_to_kitchen_site();
+            this.pinding_to_stock_site1 = new cafe.pinding_to_stock_site();
+            this.kitchen_stock_site1 = new cafe.kitchen_stock_site();
             this.top_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pictureBox)).BeginInit();
             this.left_pannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.manger_pictureBox)).BeginInit();
             this.center_panel.SuspendLayout();
+            this.stock_pannel.SuspendLayout();
             this.SuspendLayout();
             // 
             // top_panel
@@ -124,6 +141,7 @@ namespace cafe
             // 
             // settings_button
             // 
+            this.settings_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settings_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.settings_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.settings_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -139,9 +157,11 @@ namespace cafe
             this.settings_button.Text = "Settings";
             this.settings_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.settings_button.UseVisualStyleBackColor = true;
+            this.settings_button.Click += new System.EventHandler(this.settings_button_Click);
             // 
             // log_out_button
             // 
+            this.log_out_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.log_out_button.FlatAppearance.BorderSize = 0;
             this.log_out_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.log_out_button.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -166,6 +186,7 @@ namespace cafe
             // 
             // reports_button
             // 
+            this.reports_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reports_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.reports_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.reports_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -181,9 +202,11 @@ namespace cafe
             this.reports_button.Text = "Reports";
             this.reports_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.reports_button.UseVisualStyleBackColor = true;
+            this.reports_button.Click += new System.EventHandler(this.reports_button_Click);
             // 
             // order_button
             // 
+            this.order_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.order_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.order_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.order_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -199,9 +222,11 @@ namespace cafe
             this.order_button.Text = "Order";
             this.order_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.order_button.UseVisualStyleBackColor = true;
+            this.order_button.Click += new System.EventHandler(this.order_button_Click);
             // 
             // tables_button
             // 
+            this.tables_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tables_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.tables_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.tables_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -217,9 +242,11 @@ namespace cafe
             this.tables_button.Text = "Tables";
             this.tables_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tables_button.UseVisualStyleBackColor = true;
+            this.tables_button.Click += new System.EventHandler(this.tables_button_Click);
             // 
             // stock_button
             // 
+            this.stock_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.stock_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.stock_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.stock_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -235,9 +262,11 @@ namespace cafe
             this.stock_button.Text = "Stock";
             this.stock_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.stock_button.UseVisualStyleBackColor = true;
+            this.stock_button.Click += new System.EventHandler(this.stock_button_Click);
             // 
             // material_button
             // 
+            this.material_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.material_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.material_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.material_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -253,9 +282,11 @@ namespace cafe
             this.material_button.Text = "Materials";
             this.material_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.material_button.UseVisualStyleBackColor = true;
+            this.material_button.Click += new System.EventHandler(this.material_button_Click);
             // 
             // customer_button
             // 
+            this.customer_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.customer_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.customer_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.customer_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -271,9 +302,11 @@ namespace cafe
             this.customer_button.Text = "Customer";
             this.customer_button.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.customer_button.UseVisualStyleBackColor = true;
+            this.customer_button.Click += new System.EventHandler(this.customer_button_Click);
             // 
             // supplier_button
             // 
+            this.supplier_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.supplier_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.supplier_button.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.supplier_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -293,6 +326,7 @@ namespace cafe
             // 
             // home_button
             // 
+            this.home_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.home_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.home_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.home_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
@@ -307,6 +341,7 @@ namespace cafe
             this.home_button.Text = "Home";
             this.home_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.home_button.UseVisualStyleBackColor = true;
+            this.home_button.Click += new System.EventHandler(this.home_button_Click);
             // 
             // separating_panel
             // 
@@ -320,6 +355,18 @@ namespace cafe
             // center_panel
             // 
             this.center_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.center_panel.Controls.Add(this.kitchen_stock_site1);
+            this.center_panel.Controls.Add(this.pinding_to_stock_site1);
+            this.center_panel.Controls.Add(this.pinding_to_kitchen_site1);
+            this.center_panel.Controls.Add(this.stock_pannel);
+            this.center_panel.Controls.Add(this.order_site1);
+            this.center_panel.Controls.Add(this.settings_site1);
+            this.center_panel.Controls.Add(this.reports_site1);
+            this.center_panel.Controls.Add(this.tables_site1);
+            this.center_panel.Controls.Add(this.stock_site1);
+            this.center_panel.Controls.Add(this.materials_site1);
+            this.center_panel.Controls.Add(this.customer_site1);
+            this.center_panel.Controls.Add(this.home_site1);
             this.center_panel.Controls.Add(this.supplier_site1);
             this.center_panel.Controls.Add(this.left_pannel);
             this.center_panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -327,6 +374,155 @@ namespace cafe
             this.center_panel.Name = "center_panel";
             this.center_panel.Size = new System.Drawing.Size(1920, 982);
             this.center_panel.TabIndex = 0;
+            // 
+            // stock_pannel
+            // 
+            this.stock_pannel.Controls.Add(this.stock_but);
+            this.stock_pannel.Controls.Add(this.kitchen_stock_button);
+            this.stock_pannel.Controls.Add(this.pinding_to_kitchen_button);
+            this.stock_pannel.Controls.Add(this.pinding_to_stock_button);
+            this.stock_pannel.Location = new System.Drawing.Point(174, 338);
+            this.stock_pannel.Name = "stock_pannel";
+            this.stock_pannel.Size = new System.Drawing.Size(279, 306);
+            this.stock_pannel.TabIndex = 6;
+            // 
+            // stock_but
+            // 
+            this.stock_but.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.stock_but.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stock_but.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.stock_but.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.stock_but.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.stock_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stock_but.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.stock_but.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.stock_but.Location = new System.Drawing.Point(0, 228);
+            this.stock_but.Name = "stock_but";
+            this.stock_but.Size = new System.Drawing.Size(279, 76);
+            this.stock_but.TabIndex = 18;
+            this.stock_but.Text = "Stock";
+            this.stock_but.UseVisualStyleBackColor = true;
+            this.stock_but.Click += new System.EventHandler(this.stock_but_Click);
+            // 
+            // kitchen_stock_button
+            // 
+            this.kitchen_stock_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.kitchen_stock_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kitchen_stock_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.kitchen_stock_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.kitchen_stock_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.kitchen_stock_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kitchen_stock_button.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.kitchen_stock_button.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.kitchen_stock_button.Location = new System.Drawing.Point(0, 152);
+            this.kitchen_stock_button.Name = "kitchen_stock_button";
+            this.kitchen_stock_button.Size = new System.Drawing.Size(279, 76);
+            this.kitchen_stock_button.TabIndex = 17;
+            this.kitchen_stock_button.Text = "Kitchen Stock";
+            this.kitchen_stock_button.UseVisualStyleBackColor = true;
+            this.kitchen_stock_button.Click += new System.EventHandler(this.kitchen_stock_button_Click);
+            // 
+            // pinding_to_kitchen_button
+            // 
+            this.pinding_to_kitchen_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pinding_to_kitchen_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pinding_to_kitchen_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.pinding_to_kitchen_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.pinding_to_kitchen_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.pinding_to_kitchen_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pinding_to_kitchen_button.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pinding_to_kitchen_button.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.pinding_to_kitchen_button.Location = new System.Drawing.Point(0, 76);
+            this.pinding_to_kitchen_button.Name = "pinding_to_kitchen_button";
+            this.pinding_to_kitchen_button.Size = new System.Drawing.Size(279, 76);
+            this.pinding_to_kitchen_button.TabIndex = 16;
+            this.pinding_to_kitchen_button.Text = "Pinding To Kitchen";
+            this.pinding_to_kitchen_button.UseVisualStyleBackColor = true;
+            this.pinding_to_kitchen_button.Click += new System.EventHandler(this.pinding_to_kitchen_button_Click);
+            // 
+            // pinding_to_stock_button
+            // 
+            this.pinding_to_stock_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pinding_to_stock_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pinding_to_stock_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.pinding_to_stock_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.pinding_to_stock_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.pinding_to_stock_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pinding_to_stock_button.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pinding_to_stock_button.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.pinding_to_stock_button.Location = new System.Drawing.Point(0, 0);
+            this.pinding_to_stock_button.Name = "pinding_to_stock_button";
+            this.pinding_to_stock_button.Size = new System.Drawing.Size(279, 76);
+            this.pinding_to_stock_button.TabIndex = 15;
+            this.pinding_to_stock_button.Text = "Pinding To Stock";
+            this.pinding_to_stock_button.UseVisualStyleBackColor = true;
+            this.pinding_to_stock_button.Click += new System.EventHandler(this.pinding_to_stock_button_Click);
+            // 
+            // order_site1
+            // 
+            this.order_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.order_site1.Location = new System.Drawing.Point(174, 0);
+            this.order_site1.Name = "order_site1";
+            this.order_site1.Size = new System.Drawing.Size(1746, 982);
+            this.order_site1.TabIndex = 12;
+            // 
+            // settings_site1
+            // 
+            this.settings_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settings_site1.Location = new System.Drawing.Point(174, 0);
+            this.settings_site1.Name = "settings_site1";
+            this.settings_site1.Size = new System.Drawing.Size(1746, 982);
+            this.settings_site1.TabIndex = 11;
+            // 
+            // reports_site1
+            // 
+            this.reports_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reports_site1.Location = new System.Drawing.Point(174, 0);
+            this.reports_site1.Name = "reports_site1";
+            this.reports_site1.Size = new System.Drawing.Size(1746, 982);
+            this.reports_site1.TabIndex = 10;
+            // 
+            // tables_site1
+            // 
+            this.tables_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tables_site1.Location = new System.Drawing.Point(174, 0);
+            this.tables_site1.Name = "tables_site1";
+            this.tables_site1.Size = new System.Drawing.Size(1746, 982);
+            this.tables_site1.TabIndex = 9;
+            // 
+            // stock_site1
+            // 
+            this.stock_site1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.stock_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stock_site1.Location = new System.Drawing.Point(174, 0);
+            this.stock_site1.Name = "stock_site1";
+            this.stock_site1.Size = new System.Drawing.Size(1746, 982);
+            this.stock_site1.TabIndex = 8;
+            // 
+            // materials_site1
+            // 
+            this.materials_site1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.materials_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materials_site1.Location = new System.Drawing.Point(174, 0);
+            this.materials_site1.Name = "materials_site1";
+            this.materials_site1.Size = new System.Drawing.Size(1746, 982);
+            this.materials_site1.TabIndex = 7;
+            // 
+            // customer_site1
+            // 
+            this.customer_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer_site1.Location = new System.Drawing.Point(174, 0);
+            this.customer_site1.Name = "customer_site1";
+            this.customer_site1.Size = new System.Drawing.Size(1746, 982);
+            this.customer_site1.TabIndex = 6;
+            // 
+            // home_site1
+            // 
+            this.home_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.home_site1.Location = new System.Drawing.Point(174, 0);
+            this.home_site1.Name = "home_site1";
+            this.home_site1.Size = new System.Drawing.Size(1746, 982);
+            this.home_site1.TabIndex = 5;
             // 
             // supplier_site1
             // 
@@ -336,7 +532,33 @@ namespace cafe
             this.supplier_site1.Name = "supplier_site1";
             this.supplier_site1.Size = new System.Drawing.Size(1746, 982);
             this.supplier_site1.TabIndex = 4;
-            
+            // 
+            // pinding_to_kitchen_site1
+            // 
+            this.pinding_to_kitchen_site1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.pinding_to_kitchen_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pinding_to_kitchen_site1.Location = new System.Drawing.Point(174, 0);
+            this.pinding_to_kitchen_site1.Name = "pinding_to_kitchen_site1";
+            this.pinding_to_kitchen_site1.Size = new System.Drawing.Size(1746, 982);
+            this.pinding_to_kitchen_site1.TabIndex = 13;
+            // 
+            // pinding_to_stock_site1
+            // 
+            this.pinding_to_stock_site1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.pinding_to_stock_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pinding_to_stock_site1.Location = new System.Drawing.Point(174, 0);
+            this.pinding_to_stock_site1.Name = "pinding_to_stock_site1";
+            this.pinding_to_stock_site1.Size = new System.Drawing.Size(1746, 982);
+            this.pinding_to_stock_site1.TabIndex = 14;
+            // 
+            // kitchen_stock_site1
+            // 
+            this.kitchen_stock_site1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.kitchen_stock_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kitchen_stock_site1.Location = new System.Drawing.Point(174, 0);
+            this.kitchen_stock_site1.Name = "kitchen_stock_site1";
+            this.kitchen_stock_site1.Size = new System.Drawing.Size(1746, 982);
+            this.kitchen_stock_site1.TabIndex = 15;
             // 
             // manger_site
             // 
@@ -353,6 +575,7 @@ namespace cafe
             this.left_pannel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.manger_pictureBox)).EndInit();
             this.center_panel.ResumeLayout(false);
+            this.stock_pannel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -378,5 +601,21 @@ namespace cafe
         private System.Windows.Forms.Panel separating_panel;
         private System.Windows.Forms.Panel center_panel;
         private supplier_site supplier_site1;
+        private stock_site stock_site1;
+        private materials_site materials_site1;
+        private customer_site customer_site1;
+        private home_site home_site1;
+        private settings_site settings_site1;
+        private reports_site reports_site1;
+        private tables_site tables_site1;
+        private order_site order_site1;
+        private System.Windows.Forms.Panel stock_pannel;
+        private System.Windows.Forms.Button pinding_to_stock_button;
+        private System.Windows.Forms.Button pinding_to_kitchen_button;
+        private System.Windows.Forms.Button stock_but;
+        private System.Windows.Forms.Button kitchen_stock_button;
+        private kitchen_stock_site kitchen_stock_site1;
+        private pinding_to_stock_site pinding_to_stock_site1;
+        private pinding_to_kitchen_site pinding_to_kitchen_site1;
     }
 }

@@ -4,22 +4,61 @@
     <Compile Update="add_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="add_materials_to_kitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="add_materials_to_stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="add_supplier.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="cashier_site.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="customer_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="home_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="kitchen_stock_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="manger_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="materials_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="order_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="pinding_to_kitchen_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="pinding_to_stock_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="reports_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="settings_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="stock_site.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="supplier.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="supplier_site.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="tables_site.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="waiter.cs">

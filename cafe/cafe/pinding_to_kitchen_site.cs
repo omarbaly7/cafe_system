@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace cafe
 {
-    public partial class supplier_site : UserControl
+    public partial class pinding_to_kitchen_site : UserControl
     {
-        public supplier_site()
+        public pinding_to_kitchen_site()
         {
             InitializeComponent();
-            //hide sites
-            add_supplier1.Hide();            
         }
 
-        private void add_supplier_button_Click(object sender, EventArgs e)
+        private void add_materials_to_kitchen_stock_Click(object sender, EventArgs e)
         {
-            //show sites
-            add_supplier1.Show();
+            add_materials_to_kitchen add = new add_materials_to_kitchen();
+            add.Show();
         }
-
-        
     }
 }

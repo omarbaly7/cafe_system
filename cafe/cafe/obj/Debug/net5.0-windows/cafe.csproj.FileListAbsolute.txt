@@ -25,3 +25,16 @@ D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_control.resources
 D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.supplier.resources
 D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.supplier_site.resources
 D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_supplier.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.customer_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.home_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.materials_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.stock_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.reports_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.settings_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.tables_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.order_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.kitchen_stock_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.pinding_to_kitchen_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.pinding_to_stock_site.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_materials_to_kitchen.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_materials_to_stock.resources

@@ -143,7 +143,7 @@ namespace cafe
             this.Controls.Add(this.username_textbox);
             this.Controls.Add(this.login_label);
             this.Controls.Add(this.login_button);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Cafe";
             this.Text = "Cafe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
