@@ -30,12 +30,14 @@ namespace cafe
         private void username_textbox_MouseClick(object sender, MouseEventArgs e)
         {
             username_textbox.Text = string.Empty;
+            user_name_pictureBox.Hide();
         }
 
         private void pass_textbox_MouseClick(object sender, MouseEventArgs e)
         {
             pass_textbox.Text = string.Empty;
             pass_textbox.PasswordChar = '*';
+            pass_pictureBox.Hide();
         }
 
         private void username_textbox_KeyPress(object sender, KeyPressEventArgs e)
@@ -46,6 +48,7 @@ namespace cafe
                 pass_textbox.Focus();
                 pass_textbox.Text = string.Empty;
                 pass_textbox.PasswordChar = '*';
+                pass_pictureBox.Hide();
 
             }
         }
@@ -101,6 +104,6 @@ namespace cafe
             }
         }
 
-     
+       
     }
 }

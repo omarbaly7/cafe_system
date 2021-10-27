@@ -13,6 +13,9 @@
     <Compile Update="add_supplier.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="add_tables_site.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="cashier_site.cs">
       <SubType>UserControl</SubType>
     </Compile>

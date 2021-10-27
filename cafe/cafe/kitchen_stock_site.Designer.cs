@@ -64,7 +64,7 @@ namespace cafe
             this.refresh_button.FlatAppearance.BorderSize = 0;
             this.refresh_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.refresh_button.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.refresh_button.Location = new System.Drawing.Point(1433, 349);
+            this.refresh_button.Location = new System.Drawing.Point(1433, 362);
             this.refresh_button.Name = "refresh_button";
             this.refresh_button.Size = new System.Drawing.Size(310, 90);
             this.refresh_button.TabIndex = 5;

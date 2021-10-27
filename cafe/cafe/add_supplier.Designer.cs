@@ -30,6 +30,7 @@ namespace cafe
         private void InitializeComponent()
         {
             this.add_items_panel = new System.Windows.Forms.Panel();
+            this.go_back_button = new System.Windows.Forms.Button();
             this.add_button = new System.Windows.Forms.Button();
             this.remove_button = new System.Windows.Forms.Button();
             this.address_textbox = new System.Windows.Forms.TextBox();
@@ -50,6 +51,7 @@ namespace cafe
             // add_items_panel
             // 
             this.add_items_panel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.add_items_panel.Controls.Add(this.go_back_button);
             this.add_items_panel.Controls.Add(this.add_button);
             this.add_items_panel.Controls.Add(this.remove_button);
             this.add_items_panel.Controls.Add(this.address_textbox);
@@ -67,6 +69,21 @@ namespace cafe
             this.add_items_panel.Name = "add_items_panel";
             this.add_items_panel.Size = new System.Drawing.Size(1348, 784);
             this.add_items_panel.TabIndex = 14;
+            // 
+            // go_back_button
+            // 
+            this.go_back_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(128)))), ((int)(((byte)(25)))));
+            this.go_back_button.FlatAppearance.BorderSize = 0;
+            this.go_back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.go_back_button.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.go_back_button.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.go_back_button.Location = new System.Drawing.Point(41, 679);
+            this.go_back_button.Name = "go_back_button";
+            this.go_back_button.Size = new System.Drawing.Size(436, 91);
+            this.go_back_button.TabIndex = 24;
+            this.go_back_button.Text = "Go Back";
+            this.go_back_button.UseVisualStyleBackColor = false;
+            this.go_back_button.Click += new System.EventHandler(this.go_back_button_Click);
             // 
             // add_button
             // 
@@ -191,7 +208,7 @@ namespace cafe
             this.add_supplier_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_supplier_button.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.add_supplier_button.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.add_supplier_button.Location = new System.Drawing.Point(41, 679);
+            this.add_supplier_button.Location = new System.Drawing.Point(885, 679);
             this.add_supplier_button.Name = "add_supplier_button";
             this.add_supplier_button.Size = new System.Drawing.Size(436, 91);
             this.add_supplier_button.TabIndex = 11;
@@ -241,5 +258,6 @@ namespace cafe
         private System.Windows.Forms.Button add_supplier_button;
         private System.Windows.Forms.Button add_button;
         private System.Windows.Forms.Button remove_button;
+        private System.Windows.Forms.Button go_back_button;
     }
 }

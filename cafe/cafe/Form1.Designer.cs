@@ -29,16 +29,23 @@ namespace cafe
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cafe));
             this.login_button = new System.Windows.Forms.Button();
             this.login_label = new System.Windows.Forms.Label();
             this.username_textbox = new System.Windows.Forms.TextBox();
             this.pass_textbox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.user_name_pictureBox = new System.Windows.Forms.PictureBox();
+            this.pass_pictureBox = new System.Windows.Forms.PictureBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.manger_site1 = new cafe.manger_site();
-            this.cashier_site1 = new cafe.cashier_site();
             this.waiter_site1 = new cafe.waiter_site();
+            this.cashier_site1 = new cafe.cashier_site();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_name_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pass_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // login_button
@@ -78,7 +85,7 @@ namespace cafe
             this.username_textbox.Name = "username_textbox";
             this.username_textbox.Size = new System.Drawing.Size(483, 65);
             this.username_textbox.TabIndex = 3;
-            this.username_textbox.Text = "Username :";
+            this.username_textbox.Text = "      Username :";
             this.username_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.username_textbox_MouseClick);
             this.username_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.username_textbox_KeyPress);
             // 
@@ -90,7 +97,7 @@ namespace cafe
             this.pass_textbox.Name = "pass_textbox";
             this.pass_textbox.Size = new System.Drawing.Size(483, 65);
             this.pass_textbox.TabIndex = 4;
-            this.pass_textbox.Text = "Password :";
+            this.pass_textbox.Text = "      Password :";
             this.pass_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pass_textbox_MouseClick);
             this.pass_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pass_textbox_KeyPress);
             // 
@@ -104,13 +111,44 @@ namespace cafe
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // user_name_pictureBox
+            // 
+            this.user_name_pictureBox.BackColor = System.Drawing.SystemColors.Window;
+            this.user_name_pictureBox.ErrorImage = null;
+            this.user_name_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("user_name_pictureBox.Image")));
+            this.user_name_pictureBox.Location = new System.Drawing.Point(706, 410);
+            this.user_name_pictureBox.Name = "user_name_pictureBox";
+            this.user_name_pictureBox.Size = new System.Drawing.Size(64, 60);
+            this.user_name_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.user_name_pictureBox.TabIndex = 6;
+            this.user_name_pictureBox.TabStop = false;
+            // 
+            // pass_pictureBox
+            // 
+            this.pass_pictureBox.BackColor = System.Drawing.SystemColors.Window;
+            this.pass_pictureBox.ErrorImage = null;
+            this.pass_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pass_pictureBox.Image")));
+            this.pass_pictureBox.Location = new System.Drawing.Point(706, 541);
+            this.pass_pictureBox.Name = "pass_pictureBox";
+            this.pass_pictureBox.Size = new System.Drawing.Size(64, 60);
+            this.pass_pictureBox.TabIndex = 7;
+            this.pass_pictureBox.TabStop = false;
+            // 
             // manger_site1
             // 
             this.manger_site1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.manger_site1.Location = new System.Drawing.Point(0, 0);
             this.manger_site1.Name = "manger_site1";
             this.manger_site1.Size = new System.Drawing.Size(1902, 1033);
-            this.manger_site1.TabIndex = 6;
+            this.manger_site1.TabIndex = 8;
+            // 
+            // waiter_site1
+            // 
+            this.waiter_site1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.waiter_site1.Location = new System.Drawing.Point(0, 0);
+            this.waiter_site1.Name = "waiter_site1";
+            this.waiter_site1.Size = new System.Drawing.Size(1902, 1033);
+            this.waiter_site1.TabIndex = 9;
             // 
             // cashier_site1
             // 
@@ -118,16 +156,7 @@ namespace cafe
             this.cashier_site1.Location = new System.Drawing.Point(0, 0);
             this.cashier_site1.Name = "cashier_site1";
             this.cashier_site1.Size = new System.Drawing.Size(1902, 1033);
-            this.cashier_site1.TabIndex = 7;
-            // 
-            // waiter_site1
-            // 
-            this.waiter_site1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.waiter_site1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.waiter_site1.Location = new System.Drawing.Point(0, 0);
-            this.waiter_site1.Name = "waiter_site1";
-            this.waiter_site1.Size = new System.Drawing.Size(1902, 1033);
-            this.waiter_site1.TabIndex = 8;
+            this.cashier_site1.TabIndex = 10;
             // 
             // Cafe
             // 
@@ -135,9 +164,11 @@ namespace cafe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.waiter_site1);
             this.Controls.Add(this.cashier_site1);
+            this.Controls.Add(this.waiter_site1);
             this.Controls.Add(this.manger_site1);
+            this.Controls.Add(this.pass_pictureBox);
+            this.Controls.Add(this.user_name_pictureBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pass_textbox);
             this.Controls.Add(this.username_textbox);
@@ -147,6 +178,9 @@ namespace cafe
             this.Name = "Cafe";
             this.Text = "Cafe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_name_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pass_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,9 +193,12 @@ namespace cafe
         private System.Windows.Forms.TextBox username_textbox;
         private System.Windows.Forms.TextBox pass_textbox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox user_name_pictureBox;
+        private System.Windows.Forms.PictureBox pass_pictureBox;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private manger_site manger_site1;
-        private cashier_site cashier_site1;
         private waiter_site waiter_site1;
+        private cashier_site cashier_site1;
     }
 }
 

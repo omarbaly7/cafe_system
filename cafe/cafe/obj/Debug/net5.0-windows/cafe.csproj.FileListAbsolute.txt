@@ -38,3 +38,4 @@ D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.pinding_to_kitchen_site.resourc
 D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.pinding_to_stock_site.resources
 D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_materials_to_kitchen.resources
 D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_materials_to_stock.resources
+D:\cloud\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_tables_site.resources

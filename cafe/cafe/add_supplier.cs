@@ -51,5 +51,16 @@ namespace cafe
             address_label.Location = new Point(41, 418);
             address_textbox.Location = new Point(41, 479);
         }
+
+        private void go_back_button_Click(object sender, EventArgs e)
+        {
+            //hide sites
+            this.Hide();
+            //show sites
+            supplier_site s = new supplier_site();
+            this.Controls.Add(s);
+
+
+        }
     }
 }
