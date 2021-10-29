@@ -82,8 +82,8 @@ D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.GeneratedMSBuildEditorConf
 D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.AssemblyInfoInputs.cache
 D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.AssemblyInfo.cs
 D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.csproj.CoreCompileInputs.cache
-D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.csproj.CopyComplete
 D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.dll
 D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\ref\cafe.dll
 D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.pdb
 D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.genruntimeconfig.cache
+D:\الزفت\cafe\cafe\obj\Debug\net5.0-windows\cafe.add_customer.resources

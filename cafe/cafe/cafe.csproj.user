@@ -4,6 +4,9 @@
     <Compile Update="add_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="add_customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="add_materials_to_kitchen.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -15,6 +15,14 @@ namespace cafe
         public customer_site()
         {
             InitializeComponent();
+            //hide site
+            add_customer1.Hide();
+        }
+
+        private void add_customer_button_Click(object sender, EventArgs e)
+        {
+            //show site
+            add_customer1.Show();
         }
     }
 }
