@@ -29,24 +29,25 @@ namespace cafe
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.report_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // report_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(798, 303);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 159);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "reports";
+            this.report_label.AutoSize = true;
+            this.report_label.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.report_label.Location = new System.Drawing.Point(598, 469);
+            this.report_label.Name = "report_label";
+            this.report_label.Size = new System.Drawing.Size(159, 54);
+            this.report_label.TabIndex = 0;
+            this.report_label.Text = "Reports";
             // 
             // reports_site
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.Controls.Add(this.report_label);
             this.Name = "reports_site";
             this.Size = new System.Drawing.Size(1746, 982);
             this.ResumeLayout(false);
@@ -56,6 +57,6 @@ namespace cafe
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label report_label;
     }
 }

@@ -64,6 +64,7 @@ namespace cafe
             this.refresh_button.TabIndex = 12;
             this.refresh_button.Text = "Refresh";
             this.refresh_button.UseVisualStyleBackColor = false;
+            this.refresh_button.Click += new System.EventHandler(this.refresh_button_Click);
             // 
             // pinding_to_stock_dataGridView
             // 

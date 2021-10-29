@@ -50,6 +50,7 @@ namespace cafe
             this.quantity_textbox.Name = "quantity_textbox";
             this.quantity_textbox.Size = new System.Drawing.Size(421, 47);
             this.quantity_textbox.TabIndex = 29;
+            this.quantity_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.quantity_textbox_KeyPress);
             // 
             // name_textbox
             // 
@@ -58,6 +59,7 @@ namespace cafe
             this.name_textbox.Name = "name_textbox";
             this.name_textbox.Size = new System.Drawing.Size(421, 47);
             this.name_textbox.TabIndex = 28;
+            this.name_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.name_textbox_KeyPress);
             // 
             // address_label
             // 
@@ -123,6 +125,7 @@ namespace cafe
             this.add_button.TabIndex = 22;
             this.add_button.Text = "+  Add ";
             this.add_button.UseVisualStyleBackColor = false;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
             // nam_label
             // 
