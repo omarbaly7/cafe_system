@@ -147,6 +147,7 @@ namespace cafe
             this.add_supplier_button.TabIndex = 11;
             this.add_supplier_button.Text = "+  Add Materials";
             this.add_supplier_button.UseVisualStyleBackColor = false;
+            this.add_supplier_button.Click += new System.EventHandler(this.add_supplier_button_Click);
             // 
             // add_material_label
             // 
