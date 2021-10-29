@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cloud\\cafe\\cafe\\cafe.csproj": {}
+    "D:\\الزفت\\cafe\\cafe\\cafe.csproj": {}
   },
   "projects": {
-    "D:\\cloud\\cafe\\cafe\\cafe.csproj": {
+    "D:\\الزفت\\cafe\\cafe\\cafe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cloud\\cafe\\cafe\\cafe.csproj",
+        "projectUniqueName": "D:\\الزفت\\cafe\\cafe\\cafe.csproj",
         "projectName": "cafe",
-        "projectPath": "D:\\cloud\\cafe\\cafe\\cafe.csproj",
+        "projectPath": "D:\\الزفت\\cafe\\cafe\\cafe.csproj",
         "packagesPath": "C:\\Users\\omarb\\.nuget\\packages\\",
-        "outputPath": "D:\\cloud\\cafe\\cafe\\obj\\",
+        "outputPath": "D:\\الزفت\\cafe\\cafe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

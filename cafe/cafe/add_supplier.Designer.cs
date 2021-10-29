@@ -116,6 +116,7 @@ namespace cafe
             this.address_textbox.Name = "address_textbox";
             this.address_textbox.Size = new System.Drawing.Size(1235, 57);
             this.address_textbox.TabIndex = 21;
+            this.address_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.address_textbox_KeyPress);
             // 
             // email_textbox
             // 
@@ -124,6 +125,7 @@ namespace cafe
             this.email_textbox.Name = "email_textbox";
             this.email_textbox.Size = new System.Drawing.Size(1235, 57);
             this.email_textbox.TabIndex = 20;
+            this.email_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.email_textbox_KeyPress);
             // 
             // phone_2_textbox
             // 
@@ -133,6 +135,7 @@ namespace cafe
             this.phone_2_textbox.Size = new System.Drawing.Size(1235, 57);
             this.phone_2_textbox.TabIndex = 19;
             this.phone_2_textbox.Visible = false;
+            this.phone_2_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_2_textbox_KeyPress);
             // 
             // phone_textbox
             // 
@@ -141,6 +144,7 @@ namespace cafe
             this.phone_textbox.Name = "phone_textbox";
             this.phone_textbox.Size = new System.Drawing.Size(1235, 57);
             this.phone_textbox.TabIndex = 18;
+            this.phone_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_textbox_KeyPress);
             // 
             // name_textbox
             // 
@@ -149,6 +153,7 @@ namespace cafe
             this.name_textbox.Name = "name_textbox";
             this.name_textbox.Size = new System.Drawing.Size(1235, 57);
             this.name_textbox.TabIndex = 17;
+            this.name_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.name_textbox_KeyPress);
             // 
             // address_label
             // 
@@ -214,6 +219,7 @@ namespace cafe
             this.add_supplier_button.TabIndex = 11;
             this.add_supplier_button.Text = "+  Add Supplier";
             this.add_supplier_button.UseVisualStyleBackColor = false;
+            this.add_supplier_button.Click += new System.EventHandler(this.add_supplier_button_Click);
             // 
             // add_new_suppplier_label
             // 
